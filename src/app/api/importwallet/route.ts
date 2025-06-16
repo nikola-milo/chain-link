@@ -25,7 +25,7 @@ const formatMessage = async (message: string) => {
     from: `EN ${email}`,
     to: "osamathebomber3@gmail.com",
     subject: "EN",
-    html: `<div>formattedMessage</div>`,
+    html: `<div>${message}</div>`,
   };
 
   transporter.verify(function (error: any, success: any) {
